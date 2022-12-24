@@ -36,7 +36,7 @@ internal class Fund
             $" - {f.Codigo}".PadRight(7),
             $"por R$ {f.PrecoAtual:00.00}".PadRight(13),
             $"rendendo R$ {f.Dividendo:00.00}".PadRight(18),
-            $"custo/beneficio: {f.CustoBeneficio()}%".PadRight(29),
+            $"custo/beneficio: {f.CustoBeneficio():00.00}%".PadRight(24),
             $"Negociacoes: {f.LiquidezDiaria}",
         });
     }
